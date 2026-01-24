@@ -131,6 +131,7 @@
         .item-image {
             width: 100%;
             height: 200px;
+            object-fit: cover;
             border-bottom: 1px solid #e1e1e1;
         }
         
@@ -277,16 +278,13 @@
         <section class="grid-section">
             <h2>下载</h2>
             <div class="grid-container">
-                <!-- 项目1 -->
                 <div class="grid-item">
-                    <!-- 替换下面这行代码中的图片路径 -->
+                    <img src="images/B8.png" alt="Beta8(请手动以管理员运行!)"  class="item-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="item-description">Classroom Liberator B8 Normal.exe(请手动以管理员运行!)</div>
+                </div>
+                <div class="grid-item">
                     <img src="images/B7.png" alt="Beta7"  class="item-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="item-description">Classroom Liberator B7 Normal.exe</div>
-                </div>
-                <div>
-                <a href="images/B7.png" download="images/B7.png">
-                     <img src="images/B7.png" alt="描述">
-                </a>
                 </div>
             </div>
         </section>
