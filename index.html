@@ -141,6 +141,13 @@
             color: #333;
             line-height: 1.5;
         }
+
+        .item-description-download {
+            padding: 20px;
+            font-size: 16px;
+            color: #0011ff;
+            line-height: 1.5;
+        }
         
         /* 占位图片样式 - 当图片未加载时显示 */
         .placeholder-image {
@@ -175,6 +182,15 @@
             border: 2px dashed #ddd;
         }
         
+        .upload-section-note {
+            background-color: white;
+            border-radius: 4px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 2px dashed #ddd;
+        }
+
         .upload-section h3 {
             font-size: 24px;
             font-weight: 300;
@@ -182,6 +198,13 @@
             margin-bottom: 20px;
         }
         
+        .upload-section-note h3 {
+            font-size: 24px;
+            font-weight: 300;
+            color: #ff7b00;
+            margin-bottom: 20px;
+        }
+
         .upload-instructions {
             background-color: #f0f7ff;
             padding: 20px;
@@ -190,6 +213,14 @@
             border-left: 4px solid #0067b8;
         }
         
+        .upload-instructions-note {
+            background-color: #fdf2e4;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9409;
+        }
+
         .code-block {
             background-color: #f5f5f5;
             padding: 15px;
@@ -206,7 +237,7 @@
                 padding: 20px 15px;
             }
             
-            .intro-section, .grid-section, .upload-section {
+            .intro-section, .grid-section, .upload-section, .upload-section-note {
                 padding: 25px;
             }
             
@@ -222,6 +253,18 @@
                 font-size: 20px;
             }
             
+            .intro-section-note h1 {
+                font-size: 28px;
+            }
+            
+            .grid-section-note h2 {
+                font-size: 24px;
+            }
+            
+            .upload-section-note h3 {
+                font-size: 20px;
+            }
+
             .grid-container {
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
                 gap: 20px;
@@ -249,16 +292,26 @@
     <div class="title-bar">
         <div class="title-text">Classroom Liberator</div>
     </div>
-    
-    <!-- 主内容区域 -->
     <div class="main-content">
-        <!-- 第一个大块：大标题和文字介绍 -->
+        <section class="upload-section-note">
+            <h3>欢迎新成员!!! syx 和 qzl（说的就是你）</h3>
+            <div class="upload-instructions-note">
+                <p>你没有猜错，我们一个组的</p>
+                <p>你现在一定很疑惑，别着急！第一次肯定有点蒙</p>
+                <p>你现在先去下面找到“下载版块”，然后找到Classroom Liberator B10 Normal.exe的位置，选择直接下载</p>
+                <p>它会下载一个压缩包，直接打开双击运行然后无脑点确定就好了！</p>
+                <p>第一次用你可以先不急，先看一看每一页的内容，摸清楚这个程序的使用方法</p>
+                <p>如果压缩包打不开（没有解压缩软件）</p>
+                <p>那就在下方找到7zip的安装包路径安装即可！</p>
+                <p>没看明白就打开“欢迎”页，里面有详细使用方法</p>
+            </div>
+        </section>
         <section class="intro-section">
             <h1>新版介绍</h1>
             <div class="intro-text">
-                <p>-加入了删除小助手密码的功能</p>
-                <p>-加入了修改小助手密码的功能</p>
-                <p>-支持windows7,windows10,windows11的UIAccess</p>
+                <p>-加入内网通信功能</p>
+                <p>-正在制作ctt部分（还没做完！不要乱点！）</p>
+                <p>-关闭、删除极域驱动，解除网络，u盘，键盘限制</p>
             </div>
         </section>
         <section class="intro-section">
@@ -281,40 +334,35 @@
             <h2>下载</h2>
             <div class="grid-container">
                 <div class="grid-item">
+                    <img src="images/B10.png" alt="Beta10"  class="item-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="item-description">Classroom Liberator B10 Normal.exe</div>
+                    <a href="verstions/Classroom Liberator B10.zip" class="item-description-download" download>直接下载</a>
+                </div>
+                <div class="grid-item">
                     <img src="images/B9.png" alt="Beta9"  class="item-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="item-description">Classroom Liberator B9 Normal.exe</div>
+                    <a href="verstions/Classroom Liberator B9.rar" class="item-description-download" download>直接下载</a>
                 </div>
                 <div class="grid-item">
                     <img src="images/B8.png" alt="Beta8(请手动以管理员运行!)"  class="item-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="item-description">Classroom Liberator B8 Normal.exe(请手动以管理员运行!)</div>
+                    <a href="verstions/Classroom Liberator B8.rar" class="item-description-download" download>直接下载</a>
                 </div>
                 <div class="grid-item">
                     <img src="images/B7.png" alt="Beta7"  class="item-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="item-description">Classroom Liberator B7 Normal.exe</div>
+                    <a href="verstions/Classroom Liberator B7.rar" class="item-description-download" download>直接下载</a>
+                </div>
             </div>
-            <div class="upload-instructions">
-                <p>你也可以选择直接下载</p>
-                <p>Classroom Liberator B9</p><a href="verstions/Classroom Liberator B9.rar" download>点击我下载</a>
-                <p>Classroom Liberator B8</p><a href="verstions/Classroom Liberator B8.rar" download>点击我下载</a>
-                <p>Classroom Liberator B7</p><a href="verstions/Classroom Liberator B7.rar" download>点击我下载</a>
-            </div>
+            <div>
+                <div class="upload-instructions">
+                    <p>没有解压缩软件？点击此处下载7zip（当然，它不是最新版。我啥时候做的网站它就是什么版本，但它支持windows7和windows10）
+                        <a href="7zip.exe" class="item-description-download" download>下载7zip</a>
+                    </p>
+                </div>
             </div>
         </section>
-     <section class="upload-section">
-            <h3>赞助</h3>
-            <div class="upload-instructions">
-                <p>我需要一点钱买一个域名...</p>
-                <p>这样只要我使用了域名泛解析zm就禁不了我的网站了</p>
-            </div>
-            <div class="upload-instructions">
-                <p>你可以选择前往我的爱发电官主页，地址：</p>
-                <a href="https://www.ifdian.net/a/Classroom_Liberator">https://www.ifdian.net/a/Classroom_Liberator</a>
-                <p>你也可以关注我的B站账号，如果我的粉丝足够多，我也能拿一点点钱</p>
-                <a href="https://space.bilibili.com/1001218380">https://space.bilibili.com/1001218380</a>
-            </div>
-            <p>真的希望看到这里的各位金主大人能有所行动qwq</p>
-    </section>
-         <section class="upload-section">
+        <section class="upload-section">
             <h3>给zm的一段话</h3>
             <div class="upload-instructions">
                 <p>我上了你的云黑榜，我很感谢你对我实力的认可。</p>
@@ -328,9 +376,9 @@
                 <p>你对得起你自己的良心吗？</p>
                 <p>你与其在这里根一群初中生赛博斗法</p>
                 <p>你随便做个什么软件都可以发家致富</p>
-                <p>在这里跟我们打，又是何意味呢？</p>
+                <p>在这里跟我们打，有什么意义呢？</p>
             </div>
-    </section>
+        </section>
     <!-- 页脚 -->
     <footer class="footer">
         <p>---CLassroom Liberator---</p>
@@ -369,7 +417,6 @@
     </script>
 </body>
 </html>
-
 
 
 
